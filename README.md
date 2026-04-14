@@ -66,7 +66,7 @@ python train.py
 
 ## What I Learned
 
-The biggest lesson was that state representation matters more than training volume. I threw 300k episodes at the original agent and it still lost to humans. Fixing the canonical state compression and adding opponent diversity did more in 50k episodes than brute-force training ever did.
+The biggest lesson was that state representation matters more than training volume. I could throw 300k episodes at the original agent and it would still lose to humans. Fixing the canonical state compression and adding opponent diversity did more in 50k episodes than brute-force training ever did.
 
 The action space transform debugging was also a good lesson in how subtle RL bugs can be. The agent was performing terribly, and the issue was that `make_move` internally calls `get_state`, which overwrites the rotation used for canonicalization. The fix was one line (save the rotation before the move), but finding it required actually understanding the data flow end to end.
 
