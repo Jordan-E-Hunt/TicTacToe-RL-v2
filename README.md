@@ -2,6 +2,8 @@
 
 A Q-Learning agent that plays Tic-Tac-Toe at a near-optimal level, trained through self-play and opponent-pool strategies. This is a rebuilt and improved version of my [original RL project](https://github.com/Jordan-E-Hunt/TicTacToe-Reinforcement-Learning), and the improvements go deeper than just tuning hyperparameters.
 
+[Play My Agent (On my portfolio)](https://jordan-e-hunt.github.io/)
+
 ## What Changed from v1
 
 The first version worked, but it had real limitations that showed up when you actually played against it. It would lose to basic human strategies that a random opponent never punished. Here is what I changed and why.
