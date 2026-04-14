@@ -24,7 +24,7 @@ Training uses an epsilon-greedy strategy with exponential decay, starting with p
 
 ## Performance
 
-![Learning Curve](assets/convergence.png)
+![Learning Curve](convergence.png)
 
 The graph shows the agent's success rate (wins + draws) against a random opponent during training, tested every 1,000 episodes. The teal line is performance, the copper dashed line is epsilon (exploration rate).
 
